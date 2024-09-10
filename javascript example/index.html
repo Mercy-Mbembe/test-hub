@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+     <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <h1>JavaScript Example</h1>
+    <h1>Chart.js Integration Example</h1>
+
+    <!-- Canvas element for chart -->
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <script src="script.js"></script>
+    // Get the canvas element
+var ctx = document.getElementById('myChart').getContext('2d');
+
+// Create the chart
+var myChart = new Chart(ctx, {
+    type: 'line', // Specify the type of chart
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+            label: 'Sales Data',
+            data: [10, 20, 15, 25, 18, 30],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)', // Background color
+            borderColor: 'rgba(54, 162, 235, 1)', // Border color
+            borderWidth: 1 // Border width
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true // Start y-axis at zero
+            }
+        }
+    }
+});
+
+    Lets learn JavaScript, it is so interesting and easy. Wishing you well
+    <script src="script.js"></script>
+</body>
+</html>
